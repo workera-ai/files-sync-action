@@ -14,7 +14,7 @@ A Github Action that can sync files from one repository to many others. This act
 
 ### `GITHUB_SERVER`
 
-Configurable GitHub Server (to support GitHub Enterprise deployments).  If not specified, will default to `github.com`. Should not include `http(s)://`.  Should also not include trailing `/` character.
+Configurable GitHub Server (to support GitHub Enterprise deployments). If not specified, will default to `github.com`. Should not include `http(s)://`. Should also not include trailing `/` character.
 
 ### `SRC_REPO`
 
@@ -112,7 +112,9 @@ process.env.INPUT_GITHUB_TOKEN = "YOUR_GITHUB_TOKEN";
 process.env.INPUT_FILE_PATTERNS = "^README.md$";
 process.env.INPUT_SKIP_CLEANUP = "false";
 process.env.GITHUB_ACTOR = "adrianjost";
-process.env.INPUT_DRY_RUN = "true";
+process.env.INPUT_DRY_RUN = "false";
 
 require("./index");
 ```
+
+testing!
